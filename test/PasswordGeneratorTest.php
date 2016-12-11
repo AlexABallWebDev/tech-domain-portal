@@ -1,4 +1,9 @@
 <?php
+/*
+ * Green River Tech Domain Password Reset Portal
+ * Copyright (C) 2016 Organized Anarchy
+ * MIT License
+ */
 use PHPUnit\Framework\TestCase;
 
 require_once ("../utils/PasswordGenerator.php");

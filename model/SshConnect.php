@@ -1,9 +1,14 @@
 <?php
+/*
+ * Green River Tech Domain Password Reset Portal
+ * Copyright (C) 2016 Organized Anarchy
+ * MIT License
+ */
 
 class SSHConnect{
 
 	//fields
-	private $ssh_host = '000.000.000.0';
+  private $ssh_host = '000.000.000.0';
 	private $ssh_port = 22;
 	private $ssh_auth_user = 'ActiveDirectoryDomainUser';
 	private $ssh_auth_pass = 'thepassword';
@@ -11,7 +16,7 @@ class SSHConnect{
 	private $connection;
 
 	public function __construct() {
-		
+
 	}
 
 	/**
@@ -51,8 +56,8 @@ class SSHConnect{
 	 *Closes SSH connection
 	 */
 	public function disconnect() {
-  	$this->exec('echo "EXITING" && exit;');
-  	$this->connection = null;
+  	$this->exec('exit');
+  	unset($this->connection);
 	}
 
 	/**

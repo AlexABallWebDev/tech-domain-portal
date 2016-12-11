@@ -1,4 +1,9 @@
-
+/*
+ * Green River Tech Domain Password Reset Portal
+ * Copyright (C) 2016 Organized Anarchy
+ * MIT License
+ */
+ 
 /*
  * verified_status: -1 = denied. 0 = pending. 1 = accepted.
  */
